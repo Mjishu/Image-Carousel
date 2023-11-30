@@ -1,0 +1,79 @@
+
+/* todo: fix the css on the images, for coffee bean one its too thick it covers it */
+body{
+    background-image: linear-gradient(#D7C8EC, #B8A1D8);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img{
+    height: 600px;
+    width: auto;
+    border: 1px white solid;
+    border-radius: 15px;
+    position: relative;
+    top: 100px;
+}
+
+#imageHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    background: none;
+    border: none;
+    
+}
+
+#buttonPrev{
+    color: black;
+    position: absolute;
+    left: 600px;
+    font-size: 40px;
+    font-style: italic;
+   
+}
+
+#buttonNext{
+    color: black;
+    position: absolute;
+    right: 600px;
+    font-size: 40px;
+    
+    
+}
+.buttons:hover{
+    box-shadow: 0 0 5px #A3D6E8;
+    border: #A3D6E8 1px solid;
+}
+
+#locationDiv{
+    position: absolute;
+    right: 50%;
+    bottom: 160px;
+    font-size: 25px;
+}
+
+.imgBtnClass{
+    border-radius: 50%;
+    border:none;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    
+}
+
+#imgWrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+#imgWrap > button{
+    margin-left: 3px;
+}
+
+.imgBtnClass:hover{
+    border: cyan 1px solid;
+}
