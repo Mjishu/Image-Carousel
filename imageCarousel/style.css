@@ -13,6 +13,8 @@ img{
     border-radius: 15px;
     position: relative;
     top: 100px;
+    box-shadow: 0 0 5px black;
+    transition-duration:1000ms ;
 }
 
 #imageHolder{
@@ -22,7 +24,8 @@ img{
 
 .buttons{
     background: none;
-    border: none;
+    border: none; 
+    
     
 }
 
@@ -61,7 +64,8 @@ img{
     position: relative;
     height: 15px;
     width: 15px;
-    
+    box-shadow: 0 0 5px black;
+    background: #E7BCDE;
 }
 
 #imgWrap{
@@ -75,5 +79,7 @@ img{
 }
 
 .imgBtnClass:hover{
-    border: cyan 1px solid;
+    border: #F0ECE5 1px solid;
+    box-shadow: 0 0 5px #F0ECE5;
 }
+/** Theres issues with css and js conflicting bc transitions don't work at all */
