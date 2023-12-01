@@ -67,16 +67,29 @@ function hideImage(index){
 hideImage(0);
 
 
-function updateLocationNum(){ //Todo buttons up but they dont do anyhting
+function updateLocationNum(){ 
     const imgWrap = document.getElementById("imgWrap");
     for(let i =0; i< imageList.length; i++){
         const imageBtn = document.createElement("button");
         imageBtn.setAttribute("id", "imgBtn" + i )
         imageBtn.setAttribute("class", "imgBtnClass")
-        imgWrap.append(imageBtn)
+        imgWrap.append(imageBtn);
+        
+
+        imageBtn.addEventListener("click", function(){
+            changeColor(imageBtn);
+        });
     }
    
 }
+updateLocationNum();
+//todo need to add where it gets rid of black as it moves to next img or button, and each time the timer changes or the next buttons change it changes buttons
+//todo: maybe do it where it just takes the index of whatever the image is at and it fills that button? then need to make it so each button click takes you to that image
+
+function changeColor(btn){ 
+        btn.style.backgroundColor = "black";    
+}
+
 
 
 //? Works but there is slight delay between clicking button and image showing up, maybe add animation in css to clean it up?
@@ -100,6 +113,6 @@ function imageSwitchFunct(){
 
 // todo : Add a pause button for the image carousel use clearInterval and then if the play button is clicked just use setInterval again and recall the function
 // todo :"" Create Buttons that show what image and how many images"", and then if a button is clicked oyu skip to that image(replace 1/4..2/4 with this)
-updateLocationNum();
+
 
 // todo add transition effects
